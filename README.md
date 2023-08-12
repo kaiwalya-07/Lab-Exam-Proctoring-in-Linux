@@ -79,8 +79,7 @@ This process will take some time execute , run the below code
 make
 ```
 There may be the following error that will interrupt the building process if you are on Ubuntu.
-No rule to make target 'debian/canonical-certs.pem
-Fix this issue with the two given commands
+No rule to make target 'debian/canonical-certs.pem, then fix this issue with the two given commands
 ```bash
  scripts/config --disable SYSTEM_TRUSTED_KEYS
  scripts/config --disable SYSTEM_REVOCATION_KEYS
@@ -92,4 +91,26 @@ sudo make modules_install
 Finally, install the kernel by running the following code:
 ```bash
 sudo make install
+```
+
+Step 6. Testing modules to validate kernel building
+We have used two basic and simple modules which will justify the kernel that it has successfully
+built.
+You can test the modules by following these commands in the terminal navigated in the same
+directory.
+
+Command to load the module:
+```bash
+sudo insmod <module_name>.ko
+```
+
+Verification for successful loading:
+```bash
+lsmod | grep <module_name>
+```
+
+
+Command to unload the module
+```bash
+sudo rmmod <module_name>
 ```
