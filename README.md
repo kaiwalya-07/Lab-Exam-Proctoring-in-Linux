@@ -99,18 +99,18 @@ built.
 You can test the modules by following these commands in the terminal navigated in the same
 directory.
 
-Command to load the module:
+###### Command to load the module:
 ```bash
 sudo insmod <module_name>.ko
 ```
 
-Verification for successful loading:
+###### Verification for successful loading:
 ```bash
 lsmod | grep <module_name>
 ```
 
 
-Command to unload the module
+###### Command to unload the module
 ```bash
 sudo rmmod <module_name>
 ```
