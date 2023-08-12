@@ -10,17 +10,21 @@ computer. This will directly insert the modules inside the computer. The three m
 built are:
 
  1. Focus module: This script keeps track of the window switching at the time of the exam and logs the application
-      used at the end of the log file.
+                  used at the end of the log file.
      
-  2. Network Firewall : There are 2 parts one is Complete Internet Blocking where
+  2. Network Firewall : There are 2 parts one is Complete Internet Blocking where The module that we built was built using the Netfiler framework provided by 
+          Linux. The module is to be loaded into the kernel to make it functional. Numerous hooks are provided by the                                             
+          Netfilter framework in the Linux kernel. Other is selective internet blocking those exams where internet access is required on a particular website 
+          where the exam is being held. For these types of exams, we came up with a module where the examiner can block the entire internet, save one or two that 
+          are needed for the examination.
      
   3. External Storage Blocking: This module blocks the specified port where the external
-     devices (except for keyboard or mouse) are connected. This helps to avoid using any
-     help that can be offered from the data on an external device.
+                          devices (except for keyboard or mouse) are connected. This helps to avoid using any
+                          help that can be offered from the data on an external device.
      
   4. Deployment : Manually loading each module on each PC is not an efficient solution.
-      Therefore, we have written a script that would ssh from the master computer to each
-       computer in a sequential manner and load these modules with the necessary scripts.
+          Therefore, we have written a script that would ssh from the master computer to each
+          computer in a sequential manner and load these modules with the necessary scripts.
 
 
 ## Prerequisites
