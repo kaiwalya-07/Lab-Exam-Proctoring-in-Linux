@@ -30,3 +30,9 @@ We have also written a focus script to detect the change from the exam window to
 place, another directory, or any other location. This script will log all the paths that the user
 traversed and which files he/she opened into a text file, which can be investigated for cheating
 detection purposes.
+
+
+## Prerequisites
+● A system with a Linux OS
+● An user account with root access to the system
+● At least 12 GB of available space
