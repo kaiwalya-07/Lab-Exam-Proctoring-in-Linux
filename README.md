@@ -39,6 +39,8 @@ detection purposes.
 
 ● At least 12 GB of available space
 
+### Steps to follow from scratch
+
 Step 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
  It involves building a custom version of the Linux system by compiling the source code. This
 process has several steps, like configuring, compiling, and installing the kernel.
