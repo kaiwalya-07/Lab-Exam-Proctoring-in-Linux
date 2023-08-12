@@ -1,4 +1,4 @@
-### Lab-Exam-Proctoring-in-Linux
+# Lab-Exam-Proctoring-in-Linux
 To build this proctor framework, we mainly focused on problems like the use of the internet for
 offline or online lab exams, the use of external devices like pen drives, and the use of already
 present files in the system. Keeping in mind these problems, we started working on building
