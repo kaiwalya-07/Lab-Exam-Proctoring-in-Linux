@@ -1,0 +1,1 @@
+cmd_/home/grim-reaper/kernel/network/Module.symvers :=  scripts/mod/modpost  -a    -N -o /home/grim-reaper/kernel/network/Module.symvers -n -T /home/grim-reaper/kernel/network/modules.order -i Module.symvers -e 

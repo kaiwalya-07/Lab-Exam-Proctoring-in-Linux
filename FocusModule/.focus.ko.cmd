@@ -1,0 +1,1 @@
+cmd_/home/grim-reaper/kernel/FocusModule/focus.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/grim-reaper/kernel/FocusModule/focus.ko /home/grim-reaper/kernel/FocusModule/focus.o /home/grim-reaper/kernel/FocusModule/focus.mod.o;  true
