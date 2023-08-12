@@ -41,7 +41,7 @@ detection purposes.
 
 
 ## Steps to follow from scratch
-Step 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
+##### Step 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
  It involves building a custom version of the Linux system by compiling the source code. This
 process has several steps, like configuring, compiling, and installing the kernel.
 Step 1. Source Code Download
@@ -52,20 +52,20 @@ downloaded from the given command line in the terminal.
      wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.7.tar.xz
 ```
 
-Step 2. Extracting Source Code
+##### Step 2. Extracting Source Code
 Run the following command to extract the source code
   ```bash
    tar xvf linux-6.0.7.tar.xz
 ```
 
-Step 3. Installing the Core Packages
+##### Step 3. Installing the Core Packages
 Some additional packages are required for building the kernel. To do this, run the
 following command:
 ```bash
  sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
 ```
 
-Step 4. Kernel Configuration
+##### Step 4. Kernel Configuration
 This step involves changing kernel settings based on your needs, as they come with their default
 configuration. Here we have set the kernel to its default configuration.
 ```bash
@@ -73,7 +73,7 @@ configuration. Here we have set the kernel to its default configuration.
  make menuconfig
 ```
 
-Step 5. Building Kernel
+##### Step 5. Building Kernel
 This process will take some time execute , run the below code
 ```bash
 make
@@ -93,7 +93,7 @@ Finally, install the kernel by running the following code:
 sudo make install
 ```
 
-Step 6. Testing modules to validate kernel building
+##### Step 6. Testing modules to validate kernel building
 We have used two basic and simple modules which will justify the kernel that it has successfully
 built.
 You can test the modules by following these commands in the terminal navigated in the same
