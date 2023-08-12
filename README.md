@@ -27,6 +27,32 @@ built are:
           computer in a sequential manner and load these modules with the necessary scripts.
 
 
+## Note:
+Only the .c ,.txt(wherever given in description),.ko files are required rest should be deletd. This was our complete project with result files so you canignore other files. Also a make file has to be written by you according to the module name. The make filecan have the following type of structue (varies for different writing styles)  
+
+```bash
+# Name of the kernel module
+MODULE_NAME = my_module
+
+# Path to the kernel source tree
+KERNEL_SRC := /lib/modules/$(shell uname -r)/build
+
+# Flags for the module compilation
+EXTRA_CFLAGS += -Wall
+
+# Build target
+obj-m += $(MODULE_NAME).o
+
+# Module build rule
+all:
+    $(MAKE) -C $(KERNEL_SRC) M=$(PWD) modules
+
+# Clean rule
+clean:
+    $(MAKE) -C $(KERNEL_SRC) M=$(PWD) clean
+```
+
+
 ## Prerequisites
 ● A system with a Linux OS
 
