@@ -39,6 +39,8 @@ detection purposes.
 
 ● At least 12 GB of available space
 
+
+
 ### Steps to follow from scratch
 
 Step 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
