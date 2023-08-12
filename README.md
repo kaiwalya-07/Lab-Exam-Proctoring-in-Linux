@@ -1,5 +1,4 @@
 ### Lab-Exam-Proctoring-in-Linux
-
 To build this proctor framework, we mainly focused on problems like the use of the internet for
 offline or online lab exams, the use of external devices like pen drives, and the use of already
 present files in the system. Keeping in mind these problems, we started working on building
@@ -42,7 +41,6 @@ detection purposes.
 
 
 ### Steps to follow from scratch
-
 Step 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
  It involves building a custom version of the Linux system by compiling the source code. This
 process has several steps, like configuring, compiling, and installing the kernel.
