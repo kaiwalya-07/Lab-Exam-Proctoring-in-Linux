@@ -34,5 +34,7 @@ detection purposes.
 
 ## Prerequisites
 ● A system with a Linux OS
+
 ● An user account with root access to the system
+
 ● At least 12 GB of available space
