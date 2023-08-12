@@ -38,3 +38,56 @@ detection purposes.
 ● An user account with root access to the system
 
 ● At least 12 GB of available space
+
+## 1. Building Linux Kernel/Compiling Linux Kernel from Source Code
+ It involves building a custom version of the Linux system by compiling the source code. This
+process has several steps, like configuring, compiling, and installing the kernel.
+Step 1. Source Code Download
+The latest kernel version can be downloaded from the official kernel website. It can also be
+downloaded from the given command line in the terminal.
+
+ ```bash
+     wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.7.tar.xz
+```
+
+Step 2. Extracting Source Code
+Run the following command to extract the source code
+  ```bash
+   tar xvf linux-6.0.7.tar.xz
+```
+
+Step 3. Installing the Core Packages
+Some additional packages are required for building the kernel. To do this, run the
+following command:
+```bash
+ sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
+```
+
+Step 4. Kernel Configuration
+This step involves changing kernel settings based on your needs, as they come with their default
+configuration. Here we have set the kernel to its default configuration.
+```bash
+ cp -v /boot/config-$(uname -r) .config
+ make menuconfig
+```
+
+Step 5. Building Kernel
+This process will take some time execute , run the below code
+```bash
+make
+```
+There may be the following error that will interrupt the building process if you are on Ubuntu.
+No rule to make target 'debian/canonical-certs.pem
+Fix this issue with the two given commands
+```bash
+ scripts/config --disable SYSTEM_TRUSTED_KEYS
+ scripts/config --disable SYSTEM_REVOCATION_KEYS
+```
+Now install the require modules by the following code:
+```bash
+sudo make modules_install
+```
+Finally, install the kernel by running the following code:
+```bash
+sudo make install
+```
