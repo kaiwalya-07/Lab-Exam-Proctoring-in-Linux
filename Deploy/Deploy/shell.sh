@@ -6,7 +6,7 @@ timeofexam=$3
 
 sudo mkdir /opt/modules
 sudo cd /opt/modules
-git clone https://github.com/grimreaperLinux/Procter-LKM.git
+git clone https://github.com/kaiwalya-07/Lab-Exam-Proctoring-in-Linux
 
 cd Procter-LKM/"Simple Module"
 
